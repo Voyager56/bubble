@@ -11,10 +11,8 @@ function generatenumbers(columns){
 }
 
 async function swap(arr,i,j){
-  await sleep(50)
-  let temp = arr[i];
-  arr[i]=arr[j];
-  arr[j] = temp;
+  await sleep(50);
+  [arr[i],arr[j]] = [arr[j],arr[i]];
 }
 
 async function bubblesort(array){
